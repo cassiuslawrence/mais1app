@@ -1,0 +1,148 @@
+{
+  "common": {
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "nav": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "help": "Help",
+    "contact": "Contact"
+  },
+  "home": {
+    "contactHeading": "Get in touch",
+    "contactDesc": "Have a question or want to talk about one of the apps?",
+    "contactButton": "Contact"
+  },
+  "apps": {
+    "jogo-da-velha-classico": {
+      "name": "Classic Tic-Tac-Toe",
+      "tagline": "The classic game in your pocket."
+    },
+    "magnetic-chaos": {
+      "name": "Magnetic Chaos",
+      "tagline": "One move. A chain reaction."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "If you have questions about an app, technical support, purchases, account, or any other matter, send your message.",
+    "beforeTitle": "Before sending your message",
+    "beforeDesc": "If your question is about a specific app, include the app name, the device you are using, and a brief description of the problem. This helps us respond faster and more clearly.",
+    "labelName": "Name",
+    "labelEmail": "Email",
+    "labelApp": "App",
+    "placeholderApp": "E.g.: Classic Tic-Tac-Toe",
+    "labelMessage": "Message",
+    "buttonSend": "Send message",
+    "buttonSending": "Sending...",
+    "successMessage": "Message sent successfully.",
+    "errorFallback": "Could not send your message."
+  },
+  "help": {
+    "title": "Help Center",
+    "intro": "Find answers to common questions about apps, purchases, subscriptions, and support.",
+    "q1": "How do I contact about an app?",
+    "a1": "If your question is about a specific app, use the contact page and include the app name to help us assist you faster.",
+    "q2": "How do I get support?",
+    "a2": "Support can be requested via the contact page. Whenever possible, include the app name, the device used, and a brief description of the issue.",
+    "q3": "How does subscription cancellation work?",
+    "a3intro": "If an app offers a subscription, cancellation is usually done through the store where the purchase was made, not directly on this site.",
+    "a3appleTitle": "iPhone (Apple)",
+    "a3apple": "Go to Settings > your name > Subscriptions, select the app, and cancel.",
+    "a3googleTitle": "Android (Google Play)",
+    "a3google": "Open the Play Store > Profile > Payments & subscriptions > Subscriptions, select the app, and cancel.",
+    "q4": "How does refund work?",
+    "a4intro": "When a purchase is made through the App Store or Google Play, refund requests usually need to be handled by the store itself.",
+    "a4appleTitle": "iPhone (Apple)",
+    "a4apple": "Requests are usually made through Apple's support platform associated with your purchase.",
+    "a4googleTitle": "Android (Google Play)",
+    "a4google": "Requests are usually made through the orders and purchases section of your Google Play account.",
+    "q5": "How do I restore purchases?",
+    "a5intro": "If an app offers purchases or a subscription, restoring them usually depends on the account used in the device's store.",
+    "a5detail": "Make sure you are using the same Apple ID or Google account from the original purchase and look for a <bold>Restore purchases</bold> option inside the app, when that feature exists.",
+    "q6": "How do I delete my account?",
+    "a6intro": "If an app offers a user account, deletion may be available within the app itself or by request via contact.",
+    "a6detail": "Deleting your account does not automatically cancel an active subscription. If you have a subscription, it must be cancelled separately through the store.",
+    "q7": "Where can I find the privacy policy and terms?",
+    "a7": "You can access this information from the <privacyLink>Privacy</privacyLink> and <termsLink>Terms</termsLink> pages.",
+    "stillNeedHelp": "Still need help?",
+    "contactButton": "Contact"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective date: 03/29/2026",
+    "intro": "Mais1App values your privacy and aims to handle information clearly, simply, and responsibly. This Privacy Policy explains how information may be handled when you use the Mais1App website and the apps published under this brand.",
+    "s1Title": "1. Information that may be collected",
+    "s1Body": "The collection of information may vary by app. Some apps may not collect personal data. Others may, when necessary for their operation, process information such as device technical data, usage preferences, information provided by the user, or data related to purchases, accounts, or support.",
+    "s2Title": "2. Website information",
+    "s2Body": "The Mais1App website may log basic technical information, such as browsing data, device type, browser, approximate location, pages visited, and access metrics. This may be done for operational, security, experience improvement, and performance analysis purposes.",
+    "s3Title": "3. App information",
+    "s3Body1": "Each app may handle different information depending on its purpose. Simple apps may work without an account and without significant personal data collection. More advanced apps may in the future include features such as user accounts, cloud storage, purchases, subscriptions, AI-powered features, or personalized support.",
+    "s3Body2": "When this occurs, Mais1App will seek to limit processing to what is necessary for the app's operation and the delivery of the proposed functionality.",
+    "s4Title": "4. How information may be used",
+    "s4Intro": "Processed information may be used to:",
+    "s4List": [
+      "operate and maintain the site and apps;",
+      "improve performance, stability, and user experience;",
+      "respond to support requests and contacts;",
+      "process app-specific features;",
+      "comply with legal or regulatory obligations;",
+      "prevent misuse, fraud, or abuse."
+    ],
+    "s5Title": "5. Purchases, subscriptions, and billing",
+    "s5Body": "When an app offers purchases, subscriptions, or paid content, financial processing may be handled by the App Store, Google Play, or another applicable payment provider. In such cases, Mais1App generally does not receive or store full card or payment data — only information necessary for purchase confirmation, support, and service operation, when made available by the responsible platform.",
+    "s6Title": "6. Third-party services",
+    "s6Body": "The site or apps may use third-party services when necessary for operation, hosting, analytics, authentication, purchase processing, storage, notifications, or other features. The use of these services may involve data processing in accordance with those providers' own policies.",
+    "s7Title": "7. Data retention",
+    "s7Body": "Information may be retained only for as long as necessary to fulfill the purpose of processing, comply with legal obligations, resolve disputes, prevent fraud, or maintain essential service features.",
+    "s8Title": "8. Security",
+    "s8Body": "Mais1App seeks to adopt reasonable measures to protect processed information. Even so, no method of transmission or storage is entirely risk-free, and absolute security cannot be guaranteed.",
+    "s9Title": "9. Rights and requests",
+    "s9Body": "If you wish to clarify privacy questions, request data correction or deletion, or contact us about any information processing matter, use the <contactLink>contact</contactLink> page.",
+    "s10Title": "10. Changes to this policy",
+    "s10Body": "This Privacy Policy may be updated over time to reflect changes in the site, apps, legal requirements, or operational practices. The most recent version will always be available on this page."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "effectiveDate": "Effective date: 03/29/2026",
+    "intro": "These Terms of Use govern access to and use of the Mais1App website and apps published under this brand. By using the site or any Mais1App application, you agree to these terms.",
+    "s1Title": "1. About Mais1App",
+    "s1Body": "Mais1App brings together independent apps that may vary in purpose, features, and operating model. Some apps may be extremely simple, while others may include accounts, purchases, subscriptions, remote storage, or third-party service integrations.",
+    "s2Title": "2. Permitted use",
+    "s2Body": "You agree to use the site and apps only for lawful purposes, in accordance with these terms and the applicable rules of the platform on which the app is distributed.",
+    "s2ListIntro": "The following are not permitted, for example:",
+    "s2List": [
+      "using the services for illegal or fraudulent purposes;",
+      "attempting to circumvent technical or access restrictions;",
+      "interfering with the operation of the site or apps;",
+      "copying, distributing, or exploiting content improperly;",
+      "using the apps in a way that causes abuse or harm to the service."
+    ],
+    "s3Title": "3. Availability and changes",
+    "s3Body": "Mais1App may modify, suspend, update, or discontinue the site, features, or apps at any time, with or without prior notice, especially for technical, commercial, legal, or operational reasons.",
+    "s4Title": "4. User accounts",
+    "s4Body": "Some apps may work without an account. Others may require account creation to access certain features. When an account is involved, you are responsible for maintaining the confidentiality of your credentials and for activities carried out with that access.",
+    "s5Title": "5. Purchases, subscriptions, and billing",
+    "s5Body1": "When an app offers paid features, one-time purchases, or subscriptions, processing may be done through the App Store, Google Play, or another applicable provider. In such cases, conditions such as billing, renewal, cancellation, and refunds may also depend on the rules of the platform used for the purchase.",
+    "s5Body2": "Mais1App does not fully control the payment processes of the stores and does not replace the policies of Apple, Google, or the provider responsible for the transaction.",
+    "s6Title": "6. Intellectual property",
+    "s6Body": "Unless otherwise indicated, the site, apps, the Mais1App brand, visual elements, texts, identity, and related content are protected by applicable rights and may not be reproduced, redistributed, or exploited without authorization.",
+    "s7Title": "7. Third-party services",
+    "s7Body": "The site or apps may depend on third-party services, such as hosting, authentication, analytics, payments, notifications, or external features. The availability and operation of these integrations may vary and are also subject to the terms of their respective providers.",
+    "s8Title": "8. Limitation of liability",
+    "s8Body1": "The site and apps are provided as available, within reasonable technical and operational limits. Mais1App does not guarantee uninterrupted operation, complete absence of errors, or compatibility with all devices, systems, or usage contexts.",
+    "s8Body2": "To the maximum extent permitted by applicable law, Mais1App shall not be liable for indirect, incidental, special, or consequential losses arising from the use or inability to use the site or apps.",
+    "s9Title": "9. Privacy",
+    "s9Body": "The handling of information related to the use of the site and apps is described in the <privacyLink>Privacy Policy</privacyLink>.",
+    "s10Title": "10. Changes to these terms",
+    "s10Body": "These Terms of Use may be updated periodically to reflect changes in the site, apps, legal requirements, or operational practices. The most recent version will always be available on this page.",
+    "s11Title": "11. Contact",
+    "s11Body": "If you have questions about these Terms of Use, use the <contactLink>contact</contactLink> page."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The content you tried to access does not exist or is not available.",
+    "back": "Back to home"
+  }
+}

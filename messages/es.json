@@ -1,0 +1,148 @@
+{
+  "common": {
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  },
+  "nav": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "help": "Ayuda",
+    "contact": "Contacto"
+  },
+  "home": {
+    "contactHeading": "Ponte en contacto",
+    "contactDesc": "¿Tienes alguna pregunta o quieres hablar sobre una de las apps?",
+    "contactButton": "Contacto"
+  },
+  "apps": {
+    "jogo-da-velha-classico": {
+      "name": "Tres en Raya Clásico",
+      "tagline": "El clásico juego en tu bolsillo."
+    },
+    "magnetic-chaos": {
+      "name": "Magnetic Chaos",
+      "tagline": "Un movimiento. Una reacción en cadena."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Si tienes preguntas sobre una app, soporte técnico, compras, cuenta u otro asunto, envía tu mensaje.",
+    "beforeTitle": "Antes de enviar tu mensaje",
+    "beforeDesc": "Si tu pregunta es sobre una app específica, incluye el nombre de la app, el dispositivo que usas y una breve descripción del problema. Esto nos ayuda a responder más rápido y con mayor claridad.",
+    "labelName": "Nombre",
+    "labelEmail": "Correo electrónico",
+    "labelApp": "App",
+    "placeholderApp": "Ej.: Tres en Raya Clásico",
+    "labelMessage": "Mensaje",
+    "buttonSend": "Enviar mensaje",
+    "buttonSending": "Enviando...",
+    "successMessage": "Mensaje enviado con éxito.",
+    "errorFallback": "No se pudo enviar tu mensaje."
+  },
+  "help": {
+    "title": "Centro de Ayuda",
+    "intro": "Encuentra respuestas a preguntas frecuentes sobre apps, compras, suscripciones y soporte.",
+    "q1": "¿Cómo contacto sobre una app?",
+    "a1": "Si tu pregunta es sobre una app específica, usa la página de contacto e incluye el nombre de la app para que podamos ayudarte más rápido.",
+    "q2": "¿Cómo recibo soporte?",
+    "a2": "El soporte se puede solicitar desde la página de contacto. Siempre que sea posible, incluye el nombre de la app, el dispositivo usado y una breve descripción del problema.",
+    "q3": "¿Cómo funciona la cancelación de suscripción?",
+    "a3intro": "Si una app ofrece suscripción, la cancelación normalmente se realiza en la tienda donde se realizó la compra, no directamente en este sitio.",
+    "a3appleTitle": "iPhone (Apple)",
+    "a3apple": "Ve a Configuración > tu nombre > Suscripciones, selecciona la app y cancela.",
+    "a3googleTitle": "Android (Google Play)",
+    "a3google": "Abre Play Store > Perfil > Pagos y suscripciones > Suscripciones, selecciona la app y cancela.",
+    "q4": "¿Cómo funciona el reembolso?",
+    "a4intro": "Cuando la compra se realiza en la App Store o Google Play, las solicitudes de reembolso normalmente deben ser gestionadas por la propia tienda.",
+    "a4appleTitle": "iPhone (Apple)",
+    "a4apple": "Las solicitudes se realizan normalmente a través de la plataforma de soporte de Apple asociada a tu compra.",
+    "a4googleTitle": "Android (Google Play)",
+    "a4google": "Las solicitudes se realizan normalmente en el área de pedidos y compras de tu cuenta de Google Play.",
+    "q5": "¿Cómo restauro las compras?",
+    "a5intro": "Si una app ofrece compras o suscripción, la restauración normalmente depende de la cuenta usada en la tienda del dispositivo.",
+    "a5detail": "Asegúrate de usar la misma cuenta de Apple ID o Google de la compra original y busca la opción <bold>Restaurar compras</bold> dentro de la app, cuando esa función exista.",
+    "q6": "¿Cómo elimino mi cuenta?",
+    "a6intro": "Si una app ofrece cuenta de usuario, la eliminación puede estar disponible dentro de la propia app o por solicitud a través del contacto.",
+    "a6detail": "Eliminar la cuenta no cancela automáticamente una suscripción activa. Si tienes suscripción, debe cancelarse por separado en la tienda.",
+    "q7": "¿Dónde encuentro la política de privacidad y los términos?",
+    "a7": "Puedes acceder a esta información desde las páginas de <privacyLink>Privacidad</privacyLink> y <termsLink>Términos</termsLink>.",
+    "stillNeedHelp": "¿Aún necesitas ayuda?",
+    "contactButton": "Contacto"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "effectiveDate": "Fecha de vigencia: 29/03/2026",
+    "intro": "Mais1App valora tu privacidad y busca tratar la información de forma clara, sencilla y responsable. Esta Política de Privacidad explica cómo se puede tratar la información al usar el sitio web de Mais1App y las apps publicadas bajo esta marca.",
+    "s1Title": "1. Información que puede recopilarse",
+    "s1Body": "La recopilación de información puede variar según la app. Algunas apps pueden no recopilar datos personales. Otras pueden, cuando sea necesario para su funcionamiento, tratar información como datos técnicos del dispositivo, preferencias de uso, información proporcionada por el usuario o datos relacionados con compras, cuenta o soporte.",
+    "s2Title": "2. Información del sitio web",
+    "s2Body": "El sitio web de Mais1App puede registrar información técnica básica, como datos de navegación, tipo de dispositivo, navegador, ubicación aproximada, páginas visitadas y métricas de acceso. Esto puede hacerse con fines operativos, de seguridad, mejora de la experiencia y análisis de rendimiento del sitio.",
+    "s3Title": "3. Información de las apps",
+    "s3Body1": "Cada app puede tratar información diferente según su finalidad. Las apps simples pueden funcionar sin cuenta y sin recopilación relevante de datos personales. Las apps más avanzadas pueden incluir en el futuro funcionalidades como cuenta de usuario, almacenamiento en la nube, compras, suscripciones, funciones con inteligencia artificial o soporte personalizado.",
+    "s3Body2": "Cuando esto ocurra, Mais1App buscará limitar el tratamiento a lo necesario para el funcionamiento de la app y la entrega de la funcionalidad propuesta.",
+    "s4Title": "4. Cómo puede usarse la información",
+    "s4Intro": "La información tratada puede usarse para:",
+    "s4List": [
+      "operar y mantener el sitio y las apps;",
+      "mejorar el rendimiento, la estabilidad y la experiencia de uso;",
+      "responder solicitudes de soporte y contacto;",
+      "procesar funcionalidades específicas de la app;",
+      "cumplir obligaciones legales o regulatorias;",
+      "prevenir el uso indebido, el fraude o el abuso."
+    ],
+    "s5Title": "5. Compras, suscripciones y cobros",
+    "s5Body": "Cuando una app ofrece compras, suscripciones o contenido de pago, el procesamiento financiero puede realizarse a través de la App Store, Google Play u otro proveedor de pago aplicable. En estos casos, Mais1App generalmente no recibe ni almacena datos completos de tarjeta o pago, solo la información necesaria para la confirmación de la compra, el soporte y el funcionamiento del servicio, cuando la plataforma responsable la pone a disposición.",
+    "s6Title": "6. Servicios de terceros",
+    "s6Body": "El sitio o las apps pueden utilizar servicios de terceros cuando sea necesario para el funcionamiento, alojamiento, análisis, autenticación, procesamiento de compras, almacenamiento, notificaciones u otras funcionalidades. El uso de estos servicios puede implicar el tratamiento de datos conforme a las políticas propias de esos proveedores.",
+    "s7Title": "7. Retención de datos",
+    "s7Body": "La información puede conservarse solo durante el tiempo necesario para cumplir el propósito del tratamiento, atender obligaciones legales, resolver disputas, prevenir fraudes o mantener funcionalidades esenciales del servicio.",
+    "s8Title": "8. Seguridad",
+    "s8Body": "Mais1App busca adoptar medidas razonables para proteger la información tratada. Aun así, ningún método de transmisión o almacenamiento está completamente libre de riesgos, y no es posible garantizar seguridad absoluta.",
+    "s9Title": "9. Derechos y solicitudes",
+    "s9Body": "Si deseas aclarar dudas sobre privacidad, solicitar la corrección o eliminación de datos, o contactarnos sobre cualquier asunto relacionado con el tratamiento de información, usa la página de <contactLink>contacto</contactLink>.",
+    "s10Title": "10. Cambios en esta política",
+    "s10Body": "Esta Política de Privacidad puede actualizarse con el tiempo para reflejar cambios en el sitio, las apps, los requisitos legales o las prácticas operativas. La versión más reciente siempre estará disponible en esta página."
+  },
+  "terms": {
+    "title": "Términos de Uso",
+    "effectiveDate": "Fecha de vigencia: 29/03/2026",
+    "intro": "Estos Términos de Uso regulan el acceso y el uso del sitio web de Mais1App y las apps publicadas bajo esta marca. Al usar el sitio o cualquier aplicación de Mais1App, aceptas estos términos.",
+    "s1Title": "1. Acerca de Mais1App",
+    "s1Body": "Mais1App reúne apps independientes que pueden variar en propósito, funcionalidades y modelo de funcionamiento. Algunas apps pueden ser extremadamente simples, mientras que otras pueden incluir cuenta, compras, suscripciones, almacenamiento remoto o integraciones con servicios de terceros.",
+    "s2Title": "2. Uso permitido",
+    "s2Body": "Aceptas usar el sitio y las apps únicamente con fines legales, de acuerdo con estos términos y con las reglas aplicables de la plataforma en la que se distribuya la app.",
+    "s2ListIntro": "No está permitido, por ejemplo:",
+    "s2List": [
+      "usar los servicios con fines ilegales o fraudulentos;",
+      "intentar eludir restricciones técnicas o de acceso;",
+      "interferir en el funcionamiento del sitio o las apps;",
+      "copiar, distribuir o explotar el contenido de manera indebida;",
+      "usar las apps de modo que cause abuso o perjuicio al servicio."
+    ],
+    "s3Title": "3. Disponibilidad y cambios",
+    "s3Body": "Mais1App puede modificar, suspender, actualizar o discontinuar el sitio, funcionalidades o apps en cualquier momento, con o sin previo aviso, especialmente por razones técnicas, comerciales, legales u operativas.",
+    "s4Title": "4. Cuentas de usuario",
+    "s4Body": "Algunas apps pueden funcionar sin cuenta. Otras pueden requerir la creación de una cuenta para acceder a ciertas funcionalidades. Cuando haya cuenta, eres responsable de mantener la confidencialidad de tus credenciales y de las actividades realizadas con ese acceso.",
+    "s5Title": "5. Compras, suscripciones y cobros",
+    "s5Body1": "Cuando una app ofrece funciones de pago, compras únicas o suscripciones, el procesamiento puede realizarse a través de la App Store, Google Play u otro proveedor aplicable. En esos casos, condiciones como facturación, renovación, cancelación y reembolsos también pueden depender de las reglas de la plataforma usada para la compra.",
+    "s5Body2": "Mais1App no controla íntegramente los procesos de pago de las tiendas y no reemplaza las políticas de Apple, Google o del proveedor responsable de la transacción.",
+    "s6Title": "6. Propiedad intelectual",
+    "s6Body": "Salvo indicación contraria, el sitio, las apps, la marca Mais1App, los elementos visuales, textos, identidad y demás contenidos relacionados están protegidos por los derechos aplicables y no pueden reproducirse, redistribuirse ni explotarse sin autorización.",
+    "s7Title": "7. Servicios de terceros",
+    "s7Body": "El sitio o las apps pueden depender de servicios de terceros, como alojamiento, autenticación, análisis, pagos, notificaciones o funciones externas. La disponibilidad y el funcionamiento de estas integraciones pueden variar y también están sujetos a los términos de sus respectivos proveedores.",
+    "s8Title": "8. Limitación de responsabilidad",
+    "s8Body1": "El sitio y las apps se ofrecen según disponibilidad, dentro de límites técnicos y operativos razonables. Mais1App no garantiza un funcionamiento ininterrumpido, la ausencia total de errores ni la compatibilidad con todos los dispositivos, sistemas o contextos de uso.",
+    "s8Body2": "En la máxima medida permitida por la ley aplicable, Mais1App no será responsable de pérdidas indirectas, incidentales, especiales o consecuentes derivadas del uso o la imposibilidad de uso del sitio o las apps.",
+    "s9Title": "9. Privacidad",
+    "s9Body": "El tratamiento de información relacionada con el uso del sitio y las apps se describe en la <privacyLink>Política de Privacidad</privacyLink>.",
+    "s10Title": "10. Cambios en estos términos",
+    "s10Body": "Estos Términos de Uso pueden actualizarse periódicamente para reflejar cambios en el sitio, las apps, los requisitos legales o las prácticas operativas. La versión más reciente siempre estará disponible en esta página.",
+    "s11Title": "11. Contacto",
+    "s11Body": "Si tienes preguntas sobre estos Términos de Uso, usa la página de <contactLink>contacto</contactLink>."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "desc": "El contenido que intentaste acceder no existe o no está disponible.",
+    "back": "Volver al inicio"
+  }
+}
