@@ -3,10 +3,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
+import { SITE_URL } from "@/lib/site";
 
 type Props = {
   children: React.ReactNode;
@@ -19,10 +21,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "nav" });
+  const t = await getTranslations({ locale, namespace: "meta" });
   return {
-    title: "Mais1App",
-    description: "Mais1App",
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: t("site.title"),
+      template: "%s · Mais1App",
+    },
+    description: t("site.description"),
   };
 }
 
@@ -87,6 +93,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <FooterLinks />
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );

@@ -2,6 +2,16 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { apps } from "@/lib/apps";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return pageMetadata(locale, "home", "");
+}
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -11,6 +21,9 @@ export default function HomePage() {
   return (
     <main className="bg-white">
       <section className="mx-auto max-w-5xl px-6 py-20">
+        <h1 className="mb-14 text-center text-2xl font-semibold text-gray-900">
+          {t("heading")}
+        </h1>
         <div className="flex justify-center gap-8 flex-wrap">
           {apps.map((app) => {
             const appName = tApps(`${app.slug}.name`);
@@ -31,7 +44,9 @@ export default function HomePage() {
                   </p>
                   <p className="mt-1 text-xs text-gray-500">{appTagline}</p>
                 </div>
-                {(app.appStoreUrl || app.googlePlayUrl) && (
+                {/* Cards that link to a landing page keep the buttons there
+                    (nested anchors are invalid HTML). */}
+                {!app.href && (app.appStoreUrl || app.googlePlayUrl) && (
                   <div className="flex flex-col gap-2 w-full">
                     {app.appStoreUrl && (
                       <a
@@ -55,13 +70,23 @@ export default function HomePage() {
             );
 
             return app.href ? (
-              <a
-                key={app.slug}
-                href={app.href}
-                className="transition-transform duration-300 hover:scale-105 hover:z-10"
-              >
-                {card}
-              </a>
+              app.href.startsWith("/") ? (
+                <Link
+                  key={app.slug}
+                  href={app.href}
+                  className="transition-transform duration-300 hover:scale-105 hover:z-10"
+                >
+                  {card}
+                </Link>
+              ) : (
+                <a
+                  key={app.slug}
+                  href={app.href}
+                  className="transition-transform duration-300 hover:scale-105 hover:z-10"
+                >
+                  {card}
+                </a>
+              )
             ) : (
               <div
                 key={app.slug}

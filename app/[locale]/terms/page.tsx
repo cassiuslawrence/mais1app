@@ -1,5 +1,15 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return pageMetadata(locale, "terms", "/terms");
+}
 
 export default function TermsPage() {
   const t = useTranslations("terms");

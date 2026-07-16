@@ -3,6 +3,36 @@
     "appStore": "App Store",
     "googlePlay": "Google Play"
   },
+  "meta": {
+    "site": {
+      "title": "Mais1App — Independent apps",
+      "description": "Mais1App builds small, focused apps for everyday life — simple, private, and made with care."
+    },
+    "home": {
+      "title": "Mais1App — Independent apps",
+      "description": "Mais1App builds small, focused apps for everyday life — simple, private, and made with care."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Questions about a Mais1App app, purchases, or support? Send us a message."
+    },
+    "help": {
+      "title": "Help Center",
+      "description": "Answers to common questions about Mais1App apps, purchases, subscriptions, refunds, and support."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Mais1App handles information on this website and in its apps."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "description": "The terms that govern the use of the Mais1App website and apps."
+    },
+    "tslcheck": {
+      "title": "TSL Check — Tesla inspection checklist",
+      "description": "A guided inspection app for Tesla delivery day and used Tesla purchases. Photo proof, severity guidance, and a shareable PDF report — on your iPhone, no account needed."
+    }
+  },
   "nav": {
     "privacy": "Privacy",
     "terms": "Terms",
@@ -10,6 +40,7 @@
     "contact": "Contact"
   },
   "home": {
+    "heading": "Independent apps for everyday life",
     "contactHeading": "Get in touch",
     "contactDesc": "Have a question or want to talk about one of the apps?",
     "contactButton": "Contact"
@@ -22,6 +53,29 @@
     "magnetic-chaos": {
       "name": "Magnetic Chaos",
       "tagline": "One move. A chain reaction."
+    },
+    "tslcheck": {
+      "name": "TSL Check",
+      "tagline": "Inspect your Tesla with confidence.",
+      "landing": {
+        "headline": "Catch defects before you sign",
+        "sub": "A guided inspection checklist for Tesla delivery day and used Tesla purchases.",
+        "p1": "When you pick up a car, it is easy to feel rushed. Small paint marks, panel gaps, glass issues, interior defects, missing accessories, screen warnings, or charging problems can be missed in the moment.",
+        "p2": "TSL Check helps you slow down, check each area in a clear order, and keep a record of what you found — photos, notes, and a clear report you can share.",
+        "f1Title": "Guided, complete checklist",
+        "f1Desc": "Every panel, gap, seal, and function — tailored for new deliveries and used purchases.",
+        "f2Title": "Photo proof & notes",
+        "f2Desc": "Document every issue on the spot, with severity guidance that tells you what really matters.",
+        "f3Title": "A report you can share",
+        "f3Desc": "Walk away with a clear PDF report — your findings, photos, and notes, ready to send.",
+        "privacyLine": "No account. No cloud. Your inspection stays on your device.",
+        "comingSoon": "Coming soon to the App Store",
+        "download": "Download on the App Store",
+        "androidTitle": "Using Android?",
+        "androidDesc": "Tell us you would like TSL Check for Android — it helps us decide what to build next.",
+        "androidCta": "Contact us",
+        "screenshotAlt": "TSL Check screenshot"
+      }
     }
   },
   "contact": {
