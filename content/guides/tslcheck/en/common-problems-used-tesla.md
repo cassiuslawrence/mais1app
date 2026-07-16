@@ -2,6 +2,9 @@
 title: "Common Problems When Buying a Used Tesla"
 description: "What to watch for before buying a used Tesla — battery degradation, hidden repaints, brakes, warranty and FSD transfer, paperwork — what each issue really costs, and when to renegotiate or walk away."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/wheels-rims.jpg"
+imageAlt: "Curb rash damage on a Tesla wheel rim, marked with a red arrow"
+imageCaption: "What a problem looks like — one of the real reference photos inside TSL Check."
 ---
 
 A used Tesla is a different purchase from a used gas car — and from a new Tesla. The

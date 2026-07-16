@@ -2,6 +2,9 @@
 title: "Common Problems When Taking Delivery of a New Tesla"
 description: "The issues new-Tesla buyers most often find at delivery — panel gaps, paint defects, missing accessories and more — what's normal, what's not, and what each one can cost you."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/panels-doors.jpg"
+imageAlt: "Uneven door panel gap on a Tesla, marked with a red arrow"
+imageCaption: "What a problem looks like — one of the real reference photos inside TSL Check."
 ---
 
 Delivery day is exciting, and delivery centers move fast — which is exactly why small

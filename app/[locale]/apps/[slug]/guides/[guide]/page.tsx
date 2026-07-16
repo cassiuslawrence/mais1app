@@ -40,6 +40,9 @@ export async function generateMetadata({ params }: Props) {
       url: localeUrl(locale, pagePath),
       siteName: "Mais1App",
       type: "article",
+      ...(g.image
+        ? { images: [{ url: g.image, width: 1200, height: 600 }] }
+        : {}),
     },
   };
 }
@@ -75,6 +78,7 @@ export default async function GuidePage({ params }: Props) {
     author: { "@type": "Organization", name: "Mais1App" },
     publisher: { "@type": "Organization", name: "Mais1App" },
     mainEntityOfPage: localeUrl(locale, `/apps/${slug}/guides/${g.slug}`),
+    ...(g.image ? { image: `${localeUrl(routing.defaultLocale, "")}${g.image}` } : {}),
   };
 
   return (
@@ -111,6 +115,25 @@ export default async function GuidePage({ params }: Props) {
             {formattedDate ? ` · ${formattedDate}` : null}
           </p>
         </header>
+
+        {/* Hero image: one in-app reference photo, framed as a Plus teaser */}
+        {g.image && (
+          <figure className="mb-10">
+            <Image
+              src={g.image}
+              alt={g.imageAlt ?? g.title}
+              width={1200}
+              height={600}
+              priority
+              className="rounded-2xl border border-gray-200"
+            />
+            {g.imageCaption && (
+              <figcaption className="mt-3 text-center text-sm text-gray-500">
+                {g.imageCaption}
+              </figcaption>
+            )}
+          </figure>
+        )}
 
         <div
           className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-gray-900"

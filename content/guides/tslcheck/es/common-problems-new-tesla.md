@@ -2,6 +2,9 @@
 title: "Problemas comunes al recibir un Tesla nuevo"
 description: "Los problemas que los compradores de un Tesla nuevo encuentran con más frecuencia en la entrega — holguras entre paneles, defectos de pintura, accesorios que faltan y más — qué es normal, qué no, y qué puede costarte cada uno."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/panels-doors.jpg"
+imageAlt: "Holgura desigual en la puerta de un Tesla, marcada con una flecha roja"
+imageCaption: "Así se ve un problema — una de las fotos de referencia reales dentro de TSL Check."
 ---
 
 El día de la entrega es emocionante, y los delivery centers van rápido — exactamente por

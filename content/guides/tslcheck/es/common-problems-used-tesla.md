@@ -2,6 +2,9 @@
 title: "Problemas comunes al comprar un Tesla de segunda mano"
 description: "Qué vigilar antes de comprar un Tesla usado — degradación de la batería, repintados ocultos, frenos, garantía y transferencia del FSD, papeleo — lo que cuesta de verdad cada problema, y cuándo renegociar o retirarse."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/wheels-rims.jpg"
+imageAlt: "Daño por roce de bordillo en una llanta de Tesla, marcado con una flecha roja"
+imageCaption: "Así se ve un problema — una de las fotos de referencia reales dentro de TSL Check."
 ---
 
 Un Tesla de segunda mano es una compra distinta a un coche de combustión usado — y a un

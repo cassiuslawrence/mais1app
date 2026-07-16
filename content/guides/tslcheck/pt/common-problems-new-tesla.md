@@ -2,6 +2,9 @@
 title: "Problemas comuns ao receber um Tesla novo"
 description: "Os problemas que compradores de Tesla novo mais encontram na entrega — folgas nos painéis, defeitos de pintura, acessórios faltando e mais — o que é normal, o que não é, e o que cada um pode custar."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/panels-doors.jpg"
+imageAlt: "Folga desigual na porta de um Tesla, marcada com uma seta vermelha"
+imageCaption: "Como um problema se parece — uma das fotos de referência reais dentro do TSL Check."
 ---
 
 O dia da entrega é empolgante, e os delivery centers trabalham rápido — exatamente por

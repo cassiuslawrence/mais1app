@@ -2,6 +2,9 @@
 title: "Problemas comuns ao comprar um Tesla usado"
 description: "O que observar antes de comprar um Tesla usado — degradação da bateria, repinturas escondidas, freios, garantia e transferência do FSD, documentação — o que cada problema custa de verdade, e quando renegociar ou desistir."
 date: "2026-07-16"
+image: "/images/tslcheck/guides/wheels-rims.jpg"
+imageAlt: "Dano de raspão de meio-fio na roda de um Tesla, marcado com uma seta vermelha"
+imageCaption: "Como um problema se parece — uma das fotos de referência reais dentro do TSL Check."
 ---
 
 Um Tesla usado é uma compra diferente de um carro a combustão usado — e de um Tesla

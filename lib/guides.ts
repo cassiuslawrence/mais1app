@@ -18,6 +18,11 @@ export type GuideMeta = {
   description: string;
   date: string;
   updated?: string;
+  /** Public path of the hero image (shared across locales); also the og:image. */
+  image?: string;
+  /** Localized alt text / caption for the hero image (per-locale frontmatter). */
+  imageAlt?: string;
+  imageCaption?: string;
 };
 
 export type Guide = GuideMeta & { html: string };
@@ -75,6 +80,9 @@ export function getGuide(
     description: String(data.description ?? ""),
     date: String(data.date ?? ""),
     updated: data.updated ? String(data.updated) : undefined,
+    image: data.image ? String(data.image) : undefined,
+    imageAlt: data.imageAlt ? String(data.imageAlt) : undefined,
+    imageCaption: data.imageCaption ? String(data.imageCaption) : undefined,
     html: marked.parse(content, { async: false }),
   };
 }
