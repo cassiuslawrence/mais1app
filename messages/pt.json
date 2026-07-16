@@ -3,6 +3,12 @@
     "appStore": "App Store",
     "googlePlay": "Google Play"
   },
+  "guides": {
+    "sectionTitle": "Guias",
+    "byline": "Pelos criadores do {name}",
+    "ctaTitle": "O {name} guia você por cada verificação, na ordem certa.",
+    "ctaSub": "O checklist completo é grátis no iPhone — fotos, notas e um relatório claro."
+  },
   "meta": {
     "site": {
       "title": "Mais1App — apps independentes",

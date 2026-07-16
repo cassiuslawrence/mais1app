@@ -2,6 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { apps } from "@/lib/apps";
+import { listGuideMetas } from "@/lib/guides";
 import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/lib/site";
 
@@ -28,13 +29,15 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function AppLandingPage({ params }: Props) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const app = landingApp(slug);
   if (!app) notFound();
 
   const tApp = await getTranslations(`apps.${slug}`);
   const t = await getTranslations(`apps.${slug}.landing`);
+  const tGuides = await getTranslations("guides");
   const name = tApp("name");
+  const guides = listGuideMetas(slug, locale);
 
   return (
     <main className="bg-white">
@@ -108,6 +111,34 @@ export default async function AppLandingPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {/* Guides (SEO content cluster) — only when guides exist for this app */}
+      {guides.length > 0 && (
+        <section className="border-t border-gray-100">
+          <div className="mx-auto max-w-3xl px-6 py-14">
+            <h2 className="text-xl font-semibold text-gray-900">
+              {tGuides("sectionTitle")}
+            </h2>
+            <ul className="mt-6 space-y-4">
+              {guides.map((guide) => (
+                <li key={guide.slug}>
+                  <Link
+                    href={`/apps/${slug}/guides/${guide.slug}`}
+                    className="group block rounded-xl border border-gray-200 p-5 transition-colors hover:bg-gray-50"
+                  >
+                    <p className="font-medium text-gray-900 group-hover:underline">
+                      {guide.title}
+                    </p>
+                    <p className="mt-1 text-sm text-gray-600">
+                      {guide.description}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* Android interest → existing contact page (demand signal, no new infra) */}
       <section className="border-t border-gray-100">

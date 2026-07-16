@@ -3,6 +3,12 @@
     "appStore": "App Store",
     "googlePlay": "Google Play"
   },
+  "guides": {
+    "sectionTitle": "Guides",
+    "byline": "By the makers of {name}",
+    "ctaTitle": "{name} walks you through every check, in order.",
+    "ctaSub": "The full checklist is free on iPhone — photos, notes, and a clear report."
+  },
   "meta": {
     "site": {
       "title": "Mais1App — Independent apps",

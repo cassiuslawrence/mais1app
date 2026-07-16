@@ -3,6 +3,12 @@
     "appStore": "App Store",
     "googlePlay": "Google Play"
   },
+  "guides": {
+    "sectionTitle": "Guías",
+    "byline": "Por los creadores de {name}",
+    "ctaTitle": "{name} te guía por cada verificación, en el orden correcto.",
+    "ctaSub": "La lista completa es gratis en iPhone — fotos, notas y un informe claro."
+  },
   "meta": {
     "site": {
       "title": "Mais1App — apps independientes",
