@@ -54,6 +54,10 @@
       "name": "Magnetic Chaos",
       "tagline": "One move. A chain reaction."
     },
+    "rumo": {
+      "name": "Rumo",
+      "tagline": "Turn goals into clear actions."
+    },
     "tslcheck": {
       "name": "TSL Check",
       "tagline": "Inspect your Tesla with confidence.",

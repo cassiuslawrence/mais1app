@@ -54,6 +54,10 @@
       "name": "Magnetic Chaos",
       "tagline": "Um movimento. Uma reação em cadeia."
     },
+    "rumo": {
+      "name": "Rumo",
+      "tagline": "Transforme metas em ações."
+    },
     "tslcheck": {
       "name": "TSL Check",
       "tagline": "Inspecione seu Tesla com confiança.",

@@ -22,6 +22,12 @@ export const apps: App[] = [
     icon: "/images/icon-magnetic-chaos.png",
   },
   {
+    slug: "rumo",
+    icon: "/images/icon-rumo.png",
+    // Card only (formal identification) — no landing page by decision.
+    // appStoreUrl: add when Rumo is live on the App Store.
+  },
+  {
     slug: "tslcheck",
     icon: "/images/icon-tslcheck.png",
     href: "/apps/tslcheck",
