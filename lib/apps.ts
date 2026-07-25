@@ -31,8 +31,7 @@ export const apps: App[] = [
     slug: "tslcheck",
     icon: "/images/icon-tslcheck.png",
     href: "/apps/tslcheck",
-    // appStoreUrl: enable when the app is live on the App Store:
-    // "https://apps.apple.com/app/id6790018039",
+    appStoreUrl: "https://apps.apple.com/app/id6790018039",
     screenshots: [
       "/images/tslcheck/01-welcome.jpg",
       "/images/tslcheck/03-checklist.jpg",
