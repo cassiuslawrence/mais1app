@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { apps } from "@/lib/apps";
-import { getGuide, listGuides } from "@/lib/guides";
+import { getGuide, listGuides, listGuideMetas } from "@/lib/guides";
 import { Link } from "@/i18n/navigation";
 import { localeUrl } from "@/lib/site";
 import { routing } from "@/i18n/routing";
@@ -108,6 +108,11 @@ export default async function GuidePage({ params }: Props) {
     </aside>
   );
 
+  // Sibling guides of the same app → internal links (SEO cluster + helps a
+  // reader still undecided jump between related guides). Data-driven: scales
+  // as guides 3-8 land, no code per guide.
+  const related = listGuideMetas(slug, locale).filter((m) => m.slug !== guide);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -188,6 +193,34 @@ export default async function GuidePage({ params }: Props) {
             className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-gray-900"
             dangerouslySetInnerHTML={{ __html: htmlAfter }}
           />
+        )}
+
+        {/* Related guides of the same app (internal links, SEO cluster) */}
+        {related.length > 0 && (
+          <section className="mt-14 border-t border-gray-200 pt-8">
+            <h2 className="text-lg font-semibold text-gray-900">
+              {tGuides("relatedTitle")}
+            </h2>
+            <ul className="mt-4 space-y-3">
+              {related.map((m) => (
+                <li key={m.slug}>
+                  <Link
+                    href={`/apps/${slug}/guides/${m.slug}`}
+                    className="group block rounded-xl border border-gray-200 p-4 transition-colors hover:border-gray-300 hover:bg-gray-50"
+                  >
+                    <span className="font-medium text-gray-900 group-hover:underline">
+                      {m.title}
+                    </span>
+                    {m.description && (
+                      <span className="mt-1 block text-sm text-gray-600">
+                        {m.description}
+                      </span>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
 
         {/* CTA back to the app (conditional store button, same as landing) */}
