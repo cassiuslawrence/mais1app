@@ -67,6 +67,8 @@ are a safety item. Both are strong, legitimate renegotiation levers.
 *Quick check: look at tread depth on all four tires (including inner edges), and listen
 for grinding during a low-speed brake test.*
 
+<!-- inline-cta -->
+
 ## Repaint and accident history
 
 **A panel that doesn't quite match its neighbors is telling you something.** Look for

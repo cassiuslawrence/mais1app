@@ -68,6 +68,46 @@ export default async function GuidePage({ params }: Props) {
       })
     : null;
 
+  // Store button (App Store link when live, otherwise "coming soon") — reused
+  // by the inline mid-article CTA and the closing CTA box.
+  const storeButton = app.appStoreUrl ? (
+    <a
+      href={app.appStoreUrl}
+      className="inline-flex rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-700"
+    >
+      {tLanding("download")}
+    </a>
+  ) : (
+    <span className="inline-flex rounded-lg border border-gray-300 px-6 py-3 text-sm font-medium text-gray-500">
+      {tLanding("comingSoon")}
+    </span>
+  );
+
+  // Contextual CTA placed mid-article at the <!-- inline-cta --> marker in the
+  // markdown (right after the first big visual defect), so it lands where the
+  // reader feels the "is this a real problem?" tension — not only at the end.
+  const [htmlBefore, htmlAfter] = g.html.split("<!-- inline-cta -->");
+  const inlineCta = (
+    <aside className="my-10 rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:flex sm:items-center sm:gap-5">
+      <Image
+        src={app.icon}
+        alt={name}
+        width={48}
+        height={48}
+        className="mb-4 rounded-xl shadow-sm sm:mb-0 sm:shrink-0"
+      />
+      <div className="sm:flex-1">
+        <p className="font-semibold text-gray-900">
+          {tGuides("inlineTitle")}
+        </p>
+        <p className="mt-1 text-sm text-gray-600">
+          {tGuides("inlineBody", { name })}
+        </p>
+      </div>
+      <div className="mt-4 sm:mt-0 sm:shrink-0">{storeButton}</div>
+    </aside>
+  );
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -137,8 +177,18 @@ export default async function GuidePage({ params }: Props) {
 
         <div
           className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-gray-900"
-          dangerouslySetInnerHTML={{ __html: g.html }}
+          dangerouslySetInnerHTML={{ __html: htmlBefore }}
         />
+
+        {/* Contextual CTA (only when the markdown placed the marker) */}
+        {htmlAfter !== undefined && inlineCta}
+
+        {htmlAfter !== undefined && (
+          <div
+            className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-gray-900"
+            dangerouslySetInnerHTML={{ __html: htmlAfter }}
+          />
+        )}
 
         {/* CTA back to the app (conditional store button, same as landing) */}
         <aside className="mt-14 rounded-2xl border border-gray-200 bg-gray-50 p-8 text-center">
@@ -153,20 +203,7 @@ export default async function GuidePage({ params }: Props) {
             {tGuides("ctaTitle", { name })}
           </p>
           <p className="mt-2 text-sm text-gray-600">{tGuides("ctaSub")}</p>
-          <div className="mt-6 flex justify-center">
-            {app.appStoreUrl ? (
-              <a
-                href={app.appStoreUrl}
-                className="inline-flex rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-700"
-              >
-                {tLanding("download")}
-              </a>
-            ) : (
-              <span className="inline-flex rounded-lg border border-gray-300 px-6 py-3 text-sm font-medium text-gray-500">
-                {tLanding("comingSoon")}
-              </span>
-            )}
-          </div>
+          <div className="mt-6 flex justify-center">{storeButton}</div>
           <p className="mt-4 text-xs text-gray-400">
             {tLanding("privacyLine")}
           </p>

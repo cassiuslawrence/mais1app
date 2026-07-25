@@ -70,6 +70,8 @@ renegociación.
 *Comprobación rápida: mira la profundidad del dibujo en los cuatro neumáticos (incluidos
 los bordes interiores) y escucha chirridos en una frenada a baja velocidad.*
 
+<!-- inline-cta -->
+
 ## Repintado e historial de accidentes
 
 **Un panel que no coincide del todo con sus vecinos te está diciendo algo.** Busca

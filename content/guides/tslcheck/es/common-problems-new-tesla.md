@@ -45,6 +45,8 @@ comprador. Holguras pequeñas y *uniformes* son normales — lo que buscas es as
 *Comprobación rápida: ponte de frente al coche y compara la holgura del capó a izquierda
 y derecha; después recorre las puertas comparando cada holgura arriba y abajo.*
 
+<!-- inline-cta -->
+
 ## Rayones, desconchones y marcas de transporte
 
 **Los rayones finos a menudo solo se ven en ciertos ángulos — y los parachoques y

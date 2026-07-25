@@ -7,7 +7,9 @@
     "sectionTitle": "Guías",
     "byline": "Por los creadores de {name}",
     "ctaTitle": "{name} te guía por cada verificación, en el orden correcto.",
-    "ctaSub": "La lista completa es gratis en iPhone — fotos, notas y un informe claro."
+    "ctaSub": "La lista completa es gratis en iPhone — fotos, notas y un informe claro.",
+    "inlineTitle": "¿No sabes si es un problema real?",
+    "inlineBody": "Para eso sirve {name} — fotos de referencia reales de cómo se ve cada defecto, y una revisión guiada de cada punto del coche. Gratis en iPhone."
   },
   "meta": {
     "site": {

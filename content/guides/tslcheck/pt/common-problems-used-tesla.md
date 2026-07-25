@@ -69,6 +69,8 @@ Por que importa: um jogo de pneus de Tesla é uma fatura de verdade, e freio mal
 *Verificação rápida: olhe a profundidade do sulco nos quatro pneus (incluindo as bordas
 internas) e ouça rangidos numa frenagem em baixa velocidade.*
 
+<!-- inline-cta -->
+
 ## Repintura e histórico de acidente
 
 **Um painel que não combina exatamente com os vizinhos está te dizendo algo.** Procure

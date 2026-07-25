@@ -43,6 +43,8 @@ percebe. Folgas pequenas e *uniformes* são normais — o que você procura é a
 *Verificação rápida: fique de frente para o carro e compare a folga do capô à esquerda
 e à direita; depois percorra as portas comparando cada folga em cima e embaixo.*
 
+<!-- inline-cta -->
+
 ## Riscos, lascas e marcas de transporte
 
 **Riscos finos muitas vezes só aparecem em certos ângulos — e para-choques e soleiras

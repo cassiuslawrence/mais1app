@@ -43,6 +43,8 @@ asymmetry is what you're looking for.
 *Quick check: stand squarely in front of the car and compare the hood gap left vs. right,
 then walk the doors comparing each gap top vs. bottom.*
 
+<!-- inline-cta -->
+
 ## Paint scratches, chips and transport marks
 
 **Fine scratches often only show at certain angles — and bumpers and sills are the
