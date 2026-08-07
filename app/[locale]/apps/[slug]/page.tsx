@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { apps } from "@/lib/apps";
 import { listGuideMetas } from "@/lib/guides";
 import { Link } from "@/i18n/navigation";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, localeUrl, SITE_URL } from "@/lib/site";
 
 // Generic, data-driven app landing page. An app gets one by having
 // `screenshots` (and `href`) in lib/apps.ts plus `apps.<slug>.landing.*`
@@ -39,8 +39,49 @@ export default async function AppLandingPage({ params }: Props) {
   const name = tApp("name");
   const guides = listGuideMetas(slug, locale);
 
+  // SoftwareApplication is the schema search engines and AI assistants read to
+  // understand "this is an app, for this platform, at this price, that does X" —
+  // without it the landing page is just prose to them. Price is stated as the
+  // free download (the optional paid tier lives inside the app, not at install).
+  const appJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name,
+    description: t("sub"),
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "iOS",
+    url: localeUrl(locale, `/apps/${slug}`),
+    image: `${SITE_URL}${app.icon}`,
+    ...(app.appStoreUrl ? { installUrl: app.appStoreUrl, sameAs: [app.appStoreUrl] } : {}),
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+    },
+    publisher: { "@type": "Organization", name: "Mais1App", url: SITE_URL },
+  };
+
+  // Breadcrumb helps both crawlers and AI place this page in the site hierarchy.
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Mais1App", item: localeUrl(locale, "") },
+      { "@type": "ListItem", position: 2, name, item: localeUrl(locale, `/apps/${slug}`) },
+    ],
+  };
+
   return (
     <main className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Hero */}
       <section className="mx-auto max-w-3xl px-6 pt-16 pb-10 text-center">
         <Image

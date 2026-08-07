@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { apps } from "@/lib/apps";
 import { Link } from "@/i18n/navigation";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, SITE_URL } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -18,8 +18,35 @@ export default function HomePage() {
   const tApps = useTranslations("apps");
   const tCommon = useTranslations("common");
 
+  // Organization + WebSite schema: this is how search engines and AI assistants
+  // resolve "Mais1App" as an entity (the publisher behind the apps) rather than
+  // treating each page as unrelated prose.
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "Mais1App",
+        url: SITE_URL,
+        logo: `${SITE_URL}/icon.png`,
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        name: "Mais1App",
+        url: SITE_URL,
+        publisher: { "@id": `${SITE_URL}/#organization` },
+      },
+    ],
+  };
+
   return (
     <main className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
       <section className="mx-auto max-w-5xl px-6 py-20">
         <h1 className="mb-14 text-center text-2xl font-semibold text-gray-900">
           {t("heading")}
