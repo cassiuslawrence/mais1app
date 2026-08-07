@@ -113,7 +113,7 @@ export default async function GuidePage({ params }: Props) {
   // as guides 3-8 land, no code per guide.
   const related = listGuideMetas(slug, locale).filter((m) => m.slug !== guide);
 
-  const jsonLd = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: g.title,
@@ -126,13 +126,34 @@ export default async function GuidePage({ params }: Props) {
     ...(g.image ? { image: `${localeUrl(routing.defaultLocale, "")}${g.image}` } : {}),
   };
 
+  // FAQPage schema: the structure Google AI Overviews and LLM crawlers (GPTBot,
+  // ClaudeBot, Google-Extended, etc.) most readily extract and cite verbatim.
+  const faqJsonLd =
+    g.faq && g.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: g.faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <main className="bg-white">
       <article className="mx-auto max-w-3xl px-6 py-14">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
+        {faqJsonLd && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+          />
+        )}
 
         {/* Breadcrumb back to the app's landing page */}
         <nav className="mb-8 text-sm">
@@ -193,6 +214,24 @@ export default async function GuidePage({ params }: Props) {
             className="prose prose-gray max-w-none prose-headings:text-gray-900 prose-a:text-gray-900"
             dangerouslySetInnerHTML={{ __html: htmlAfter }}
           />
+        )}
+
+        {/* FAQ: visible Q&A (also emitted as FAQPage JSON-LD above) — short,
+            declarative answers are what search AI overviews and LLMs quote. */}
+        {g.faq && g.faq.length > 0 && (
+          <section className="mt-14 border-t border-gray-200 pt-8">
+            <h2 className="text-lg font-semibold text-gray-900">
+              {tGuides("faqTitle")}
+            </h2>
+            <div className="mt-4 space-y-6">
+              {g.faq.map((f) => (
+                <div key={f.q}>
+                  <p className="font-medium text-gray-900">{f.q}</p>
+                  <p className="mt-1 text-sm text-gray-600">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         )}
 
         {/* Related guides of the same app (internal links, SEO cluster) */}

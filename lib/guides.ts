@@ -23,6 +23,13 @@ export type GuideMeta = {
   /** Localized alt text / caption for the hero image (per-locale frontmatter). */
   imageAlt?: string;
   imageCaption?: string;
+  /**
+   * Optional Q&A pairs (frontmatter YAML list of {q, a}). Rendered as a visible
+   * FAQ section and as FAQPage JSON-LD — the single highest-leverage structure
+   * for both Google AI Overviews and LLM (GPT/Claude/Gemini) citation, since
+   * short declarative answers are what gets extracted and quoted.
+   */
+  faq?: { q: string; a: string }[];
 };
 
 export type Guide = GuideMeta & { html: string };
@@ -83,6 +90,12 @@ export function getGuide(
     image: data.image ? String(data.image) : undefined,
     imageAlt: data.imageAlt ? String(data.imageAlt) : undefined,
     imageCaption: data.imageCaption ? String(data.imageCaption) : undefined,
+    faq: Array.isArray(data.faq)
+      ? data.faq.map((f: { q: unknown; a: unknown }) => ({
+          q: String(f.q),
+          a: String(f.a),
+        }))
+      : undefined,
     html: marked.parse(content, { async: false }),
   };
 }
